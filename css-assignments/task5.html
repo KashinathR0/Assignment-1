@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Styled Page</title>
+    <style>
+      /* Reset default styles */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Main Container */
+      .container {
+        display: flex;
+        background-color: #daa520; /* Dark Yellow */
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      /* Sidebar (Vertical Navigation) */
+      .sidebar {
+        width: 200px;
+        background-color: #333;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      .sidebar a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+        background-color: #555;
+      }
+
+      /* Content Section */
+      .content {
+        flex: 1;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 300px;
+      }
+
+      /* Hide all sections except home by default */
+      .content > section {
+        display: none;
+      }
+
+      /* Show only the active section */
+      #home:target,
+      #musings:target,
+      #mytown:target,
+      #links:target {
+        display: block;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: purple;
+        font-weight: 600;
+      }
+
+      h2 {
+        font-size: 22px;
+        color: purple;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 18px;
+        color: purple;
+      }
+
+      /* Footer */
+      .footer {
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      hr {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar Navigation -->
+      <div class="sidebar">
+        <a href="#home">Home Page</a>
+        <a href="#musings">Musings</a>
+        <a href="#mytown">My Town</a>
+        <a href="#links">Links</a>
+      </div>
+
+      <!-- Main Content -->
+      <div class="content">
+        <section id="home">
+          <h1>My First Styled Page</h1>
+          <h2>Welcome to my styled page</h2>
+          <p>
+            It lacks images, but at least it has style.And it has links, even if
+            they don't go anywhere...
+          </p>
+          <p>There should be more here, but I don't know what yet.</p>
+          <hr />
+          <div class="footer">
+            <p>Made 5 April 2024</p>
+            <p>By Myself</p>
+          </div>
+        </section>
+
+        <section id="musings"></section>
+        <section id="mytown"></section>
+        <section id="links"></section>
+      </div>
+    </div>
+  </body>
+</html>

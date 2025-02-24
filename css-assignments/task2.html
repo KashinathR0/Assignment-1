@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bars</title>
+    <style>
+      /* Reset default styles */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Vertical Navigation Bar */
+      .vertical-nav {
+        width: 200px;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .vertical-nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+
+      .vertical-nav a:hover,
+      .vertical-nav a:focus {
+        background-color: yellow;
+      }
+
+      /* Horizontal Navigation Bar */
+      .horizontal-nav {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        height: 50px;
+      }
+
+      .horizontal-nav a {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 0 5px;
+      }
+
+      .horizontal-nav a:hover,
+      .horizontal-nav a:focus {
+        background-color: gray;
+        color: white;
+      }
+
+      /* Layout for Side-by-Side Display */
+      .container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Navigation Bars</h2>
+
+    <div class="container">
+      <!-- Vertical Navigation -->
+      <div class="vertical-nav">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+      </div>
+
+      <!-- Horizontal Navigation -->
+      <div class="horizontal-nav">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+      </div>
+    </div>
+  </body>
+</html>

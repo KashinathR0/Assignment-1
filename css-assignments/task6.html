@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      /* Reset default styles */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+      }
+
+      /* Login Container */
+      .login-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 350px;
+      }
+
+      /* Profile Photo */
+      .profile-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: url("https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-male-user-profile-vector-illustration-isolated-background-man-profile-sign-business-concept_157943-38764.jpg")
+          no-repeat center;
+        background-size: cover;
+        margin: 0 auto 15px;
+        animation: bounce 1s infinite alternate;
+      }
+
+      /* Animation for Profile Photo */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Input Fields */
+      .input-box {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: -10px;
+      }
+
+      /* Login Button */
+      .login-btn {
+        width: 100%;
+        background: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .login-btn:hover {
+        background: #45a049;
+      }
+
+      /* Remember Me Checkbox */
+      .remember-me {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .remember-me input {
+        margin-right: 5px;
+      }
+
+      /* Cancel & Forgot Password */
+      .footer-buttons {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+
+      .cancel-btn {
+        background: red;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .cancel-btn:hover {
+        background: darkred;
+      }
+
+      .forgot-password {
+        color: blue;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .forgot-password:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        margin-right: 390px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <!-- Animated Profile Photo -->
+      <div class="profile-photo"></div>
+
+      <!-- Username Field -->
+      <p>Username</p>
+      <input type="text" class="input-box" placeholder="Username" />
+
+      <!-- Password Field -->
+      <p>Password</p>
+      <input type="password" class="input-box" placeholder="Password" />
+
+      <!-- Login Button -->
+      <button class="login-btn">Login</button>
+
+      <!-- Remember Me Checkbox -->
+      <div class="remember-me">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember Me</label>
+      </div>
+
+      <!-- Cancel & Forgot Password -->
+      <div class="footer-buttons">
+        <button class="cancel-btn">Cancel</button>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+    </div>
+  </body>
+</html>

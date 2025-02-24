@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Sidebar</title>
+    <style>
+      /* Reset default styles */
+      body {
+        margin: 0;
+        display: flex;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Sidebar Container */
+      .sidebar {
+        width: 60px; /* Collapsed width */
+        height: 100vh;
+        background-color: #222;
+        padding-top: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Sidebar Buttons (Empty Boxes) */
+      .sidebar div {
+        width: 50px;
+        height: 50px;
+        margin: 10px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      /* Different colors for each button */
+      .sidebar div:nth-child(1) {
+        background-color: red;
+      }
+      .sidebar div:nth-child(2) {
+        background-color: blue;
+      }
+      .sidebar div:nth-child(3) {
+        background-color: green;
+      }
+      .sidebar div:nth-child(4) {
+        background-color: orange;
+      }
+      .sidebar div:nth-child(5) {
+        background-color: purple;
+      }
+
+      /* Hover Effect: Expand to Rectangle */
+      .sidebar div:hover {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
